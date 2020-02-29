@@ -17,6 +17,6 @@ public class Receiver {
 		bpApp.setHandler(new PrintingHandler());
 
 		Runnable r = new NeighborListing(bpApp);
-		Receiver.scheduler.scheduleAtFixedRate(r, 0, 10, TimeUnit.MILLISECONDS);
+		Receiver.scheduler.scheduleAtFixedRate(r, 0, 500, TimeUnit.MILLISECONDS);
 	}
 }
